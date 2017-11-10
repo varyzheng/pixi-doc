@@ -19,5 +19,10 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.9.0",
+    "gulp-file-include": "^1.2.0",
+    "gulp-uglify": "^3.0.0"
   }
 }

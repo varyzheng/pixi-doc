@@ -1,0 +1,96 @@
+*{
+  font-family: 'Libre Franklin',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+.navigation{
+  position: fixed;
+  overflow: hidden;
+  min-width: 250px;
+  width: 25%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #272d37;
+}
+.navigation h3{
+  margin: 0;
+  padding: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+}
+.navigation .list{
+  padding: 20px;
+  position: absolute;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+}
+.list::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+.list::-webkit-scrollbar-thumb {
+  background-color: #647086;
+  border-radius: 4px;
+}
+.navigation .list li.item{
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3d495a;
+  overflow: hidden;
+  display: block;
+}
+.navigation li.item .itemMembers li.parent a {
+  color: #a9b3c3;
+}
+.navigation li.item ul>li {
+  padding-left: 10px;
+  font-size: .9em;
+}
+.navigation .list li.item .subtitle{
+  margin: 10px 0;
+  font-weight: 700;
+  color: #c2185b;
+  display: block;
+  letter-spacing: .05em;
+}
+.navigation .list li.item .title{
+  display: block;
+}
+.navigation li.item .title a {
+  display: block;
+  color: #cfd4db;
+}
+.navigation li.item a {
+  color: #647086;
+}
+.navigation .list li.item .title .namespaceTag{
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #c2185b;
+  color: #fff;
+  font-size: 70%;
+  padding: 2px 6px;
+  float: left;
+  margin-right: 10px;
+  pointer-events: none;
+}
+.navigation .list li.item .title.namespace a{
+  color: #fff;
+}
+.main{ 
+  left: 25%;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  word-break: break-word;
+}
